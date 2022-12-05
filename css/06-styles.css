@@ -1,0 +1,32 @@
+/**
+ * Basis CSS file
+ *
+ * @author  Educom
+ * @version 1.0
+ *
+ */
+
+ html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+h2 {
+    color: red
+}
+.cascaded h2 {
+    color: green;
+    font-family: sans-serif;
+}
+.cascaded p {
+    font-size: 20px;
+    color: blue;
+    background-color: magenta;
+    width: 50%;
+
+}
+.cascaded a {
+    background-color: yellow;
+    font-style: italic; 
+}
