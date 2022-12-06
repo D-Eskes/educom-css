@@ -1,0 +1,50 @@
+/**
+ * Basis CSS file
+ *
+ * @author  Educom
+ * @version 1.0
+ *
+ */
+
+ html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.site-font {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.site-color {
+    background-color: indigo;
+    color: #FFF;
+}
+.site-square {
+    width: 200px;
+    height: 200px;
+}
+
+.custom-font {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+.custom-color {
+    background-color: greenyellow;
+    color: #00f;
+}
+.custom-square {
+    width: 400px;
+    height: 200px;
+}
+
+.shape {
+    background-color: rebeccapurple;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    float: middle;
+    shape-outside: border-box;
+  }
+
