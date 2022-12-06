@@ -46,7 +46,30 @@ body {
 #navigation2 {
     position: fixed;
     right: 3%;
+    transition: all 0.4s ease;
+    cursor: pointer;
 }
+
+#navigation2:hover {
+    background-color: red;
+}
+
+#navigation2:hover .dropdown {
+    top: 0;
+}
+
+.dropdown {
+    position: fixed;
+    top: calc(2 * -125px);
+    left: 0;
+    right: 0;
+    height: 125px;
+    background-color: var(--lightgray);
+    transition: all 0.4s ease;
+}
+
+
+
 
 /* section */
 .content {
@@ -57,7 +80,6 @@ body {
     align-items: center;
     display: flex;
 }
-
 
 .block {
     height: 45%;
