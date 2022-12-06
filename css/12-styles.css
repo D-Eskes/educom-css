@@ -1,0 +1,76 @@
+/**
+ * Basis CSS file
+ *
+ * @author  Educom
+ * @version 1.0
+ *
+ */
+
+:root {
+    --white: #FFF;
+    --black: #000;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "section"
+        "footer";
+    grid-template-rows: 100px 1fr 100px;
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial;
+ }
+
+ /* header */
+.navigation {
+    grid-area: header;
+    background-color: blue;
+    color: white;
+    padding: 40px;
+}
+
+/* section */
+.content {
+    grid-area: section;
+    background-color: yellow;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.block {
+    background-color: red;
+    display: inline-block;
+    width: 30%;
+    height: 80%;
+    margin: 1%;
+
+    text-align: center;
+
+    border: 0px solid transparent;
+    border-radius: 5%;
+    transition: all 0.3s eas
+}
+.block:hover {
+    border-width: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    margin: 0.7%;
+}
+
+/* footer */
+.footer {
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    padding: 40px;
+}
+
