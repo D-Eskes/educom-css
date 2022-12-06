@@ -1,0 +1,40 @@
+/**
+ * Basis CSS file
+ *
+ * @author  Educom
+ * @version 1.0
+ *
+ */
+
+ html, body {
+    margin: 0;
+    padding: 0;
+}
+
+a:link {
+    color: red;
+}
+a:visited {
+    color: green
+}
+a:hover {
+    color: hotpink
+}
+a:active {
+    color: blue;
+}
+
+.main-box {
+    background-color: #0ff;
+    color: orange;
+    width: 50%;
+    height: 200px;
+}
+.main-box:hover {
+    background-color: red;
+    color: green;
+}
+.main-box:active {
+    background-color: yellow;
+    color: magenta;
+}
