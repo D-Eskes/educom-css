@@ -1,0 +1,50 @@
+/**
+ * Basis CSS file
+ *
+ * @author  Educom
+ * @version 1.0
+ *
+ */
+
+ html, body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --regular: "Arial";
+
+    --dark-brown: #402214;
+    --lighter-brown: #774231;
+    --lightest-brown: #aa4b1b;
+    --darker-red: #b31714;
+    --lighter-red: #dc3439;
+    --white: #FFF;
+    --black: #000;
+}
+
+
+.grid-example {
+    display: grid;
+    grid-template-areas: "ex1 ex1 ex2"
+                         "ex3 ex3 ex3";
+    grid-template-rows: 100px 1fr;    
+    grid-template-columns: 100px 1fr 2fr;    
+    width: 100vw;
+    height: 100vh;       
+}
+
+.ex1 {
+    grid-area: ex1;
+    background-color: var(--dark-brown)
+}
+
+.ex2 {
+    grid-area: ex2;
+    background-color: var(--darker-red)
+}
+
+.ex3 {
+    grid-area: ex3;
+    background-color: var(--lightest-brown)
+}
