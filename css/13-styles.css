@@ -1,0 +1,121 @@
+/**
+ * Basis CSS file
+ *
+ * @author  Educom
+ * @version 1.0
+ *
+ */
+
+ :root {
+    --white: #FFF;
+    --black: #000;
+    --lightgray: rgb(171, 165, 165)
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "section"
+        "footer";
+    grid-template-rows: 120px 1fr 120px;
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial;
+    font-size: 20px;
+ }
+
+ /* header */
+.navigation {
+    grid-area: header;
+    background-color: white;
+    color: black;
+    padding: 40px;
+}
+
+#navigation1 {
+    position: fixed;
+    left: 3%;
+}
+#navigation2 {
+    position: fixed;
+    right: 3%;
+}
+
+/* section */
+.content {
+    grid-area: section;
+    background-color: white;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.block {
+    height: 45%;
+    width: 25%;
+    margin: 2%;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid transparent;
+    border-radius: 5%;
+    border-color: var(--lightgray);
+    transition: all 0.3s ease;
+
+    color: white;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+.block:hover {
+    width: 26%;
+    height: 46%;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+#rome {
+    background: url("https://img.freepik.com/free-photo/black-white-colosseum-rome_53876-145036.jpg?w=1380&t=st=1670327171~exp=1670327771~hmac=b96c35635d59f4e724886536ee6bde4ea7583ef5923e1b832ae5313127ecd4d3");
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#bruxelles {
+    background: url("https://as2.ftcdn.net/v2/jpg/04/19/72/27/1000_F_419722765_io7EVXIoq7KCaKRByo4KpKRWNtbxAbLi.jpg");
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#new-york {
+    background: url("https://img.freepik.com/free-photo/new-york-city-manhattan_649448-5377.jpg?w=1380&t=st=1670327989~exp=1670328589~hmac=eb11c921e89339cdafed3890ec94a8faf5cfaf42767004318ab8079f80a1a126");
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+/* footer */
+.footer {
+    grid-area: footer;
+    background-color: var(--lightgray);
+    color: white;
+    padding: 40px;
+}
+
+#footer1 {
+    position: fixed;
+    left: 5%;
+}
+#footer2 {
+    position: fixed;
+    right: 5%;
+}
