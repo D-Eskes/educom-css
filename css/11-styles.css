@@ -1,0 +1,59 @@
+/**
+ * Basis CSS file
+ *
+ * @author  Educom
+ * @version 1.0
+ *
+ */
+
+ :root {
+    --white: #FFF;
+    --black: #000;
+
+ }
+
+
+.menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.test {
+    position: fixed;
+    top: 20px;
+    right: 0px;
+    background-color: #f0f;
+    width: 40px;
+    height: 40px;
+    z-index: -1000;
+
+}
+
+.menu-trigger {
+    background-color: #F00;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    z-index: 5000 !important;
+}
+
+.menu-trigger:hover {
+    background-color: #FFF000;
+}
+
+.menu-trigger:hover .dropdown {
+    top: 0px;
+}
+
+.dropdown {
+    position: fixed;
+    top: -400px;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background-color: #FDF;
+    transition: all 0.4s ease;
+    padding: 40px;
+}
