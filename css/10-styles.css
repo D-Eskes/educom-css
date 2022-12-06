@@ -1,0 +1,77 @@
+/**
+ * Basis CSS file
+ *
+ * @author  Educom
+ * @version 1.0
+ *
+ */
+
+:root {
+    --white: #fff;
+    --black: #000;
+
+    --red: #F00;
+    --darker-red: #AF1F16;
+
+    --color2rgb: #f00;
+    --color1rgb: #AF1F16;
+
+    --color2rgba: rgba(255,0,0,1);
+    --color1rgba: rgba(175,31,22,1);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.button-container a {
+    width: 200px;
+    padding: 10px;
+    color: var(--white);
+    background-color: var(--red);
+
+    border-radius: 10px;
+
+    -webkit-box-shadow: 6px 8px 23px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 8px 23px -1px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.2);
+
+    text-decoration: none;
+
+    transition: all 0.5s ease
+}
+
+.button-container a:hover {
+    background-color: var(--darker-red);
+}
+
+
+.button-container2 a {
+    width: 200px;
+    padding: 10px;
+    color: var(--white);
+    background-color: var(--red);
+
+    border-radius: 10px;
+
+    background: var(--color1rgba);
+    background: -moz-linear-gradient(-45deg, var(--color1rgba) 0%, var(--color2rgba) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, var(--color1rgba)), color-stop(100%, var(--color2rgba)));
+    background: -webkit-linear-gradient(-45deg, var(--color1rgba) 0%, var(--color2rgba) 100%);
+    background: -o-linear-gradient(-45deg, var(--color1rgba) 0%, var(--color2rgba) 100%);
+    background: -ms-linear-gradient(-45deg, var(--color1rgba) 0%, var(--color2rgba) 100%);
+    background: linear-gradient(135deg, var(--color1rgba) 0%, var(--color2rgba) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color1rgb), endColorstr=var(--color2rgb), GradientType=1 );
+
+    text-decoration: none;
+
+    opacity: 1;
+    transition-delay: 0;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+
+.button-container2 a:hover {
+    opacity: 0.7;
+}
